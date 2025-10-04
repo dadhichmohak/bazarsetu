@@ -1,0 +1,44 @@
+{
+  "name": "bazarsetu",
+  "version": "1.0.0",
+  "description": "Full-stack agriculture platform connecting farmers and consumers in India",
+  "main": "server/src/app.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "heroku-postbuild": "npm run install-all && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dadhichmohak/bazarsetu.git"
+  },
+  "homepage": "https://github.com/dadhichmohak/bazarsetu#readme",
+  "keywords": [
+    "agriculture", 
+    "farmers", 
+    "react", 
+    "nodejs", 
+    "india", 
+    "bazarsetu",
+    "marketplace",
+    "bilingual"
+  ],
+  "author": "Mohak Dadhich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dadhichmohak/bazarsetu/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

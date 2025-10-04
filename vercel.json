@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "name": "bazarsetu",
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    },
+    {
+      "src": "server/src/app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server/src/app.js"
+    },
+    {
+      "src": "/socket.io/(.*)",
+      "dest": "/server/src/app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/client/build/index.html"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "server/src/app.js": {
+      "maxDuration": 30
+    }
+  }
+}
