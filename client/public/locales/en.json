@@ -1,0 +1,45 @@
+{
+  "welcome": "Welcome to BazarSetu",
+  "home": "Home",
+  "about": "About",
+  "login": "Login",
+  "signup": "Signup",
+  "contact": "Contact",
+  "language": "Language",
+  "languageToggle": "Switch to Hindi",
+  "footer": {
+    "copyright": "© 2023 BazarSetu. All rights reserved."
+  },
+  "dashboard": {
+    "title": "Farmer Dashboard",
+    "manageCrops": "Manage Your Crops",
+    "viewSales": "View Sales Data",
+    "trackCommissions": "Track Commissions"
+  },
+  "productListing": {
+    "title": "Available Crops",
+    "addNewCrop": "Add New Crop",
+    "selectExistingCrop": "Select Existing Crop"
+  },
+  "marketplace": {
+    "title": "Marketplace",
+    "availableProducts": "Available Products for Purchase"
+  },
+  "orders": {
+    "title": "Your Orders",
+    "manageSelections": "Manage Your Selections for Pickup"
+  },
+  "loginPage": {
+    "title": "Login",
+    "aadhaarNumber": "Enter Aadhaar Number",
+    "submit": "Submit"
+  },
+  "registerPage": {
+    "title": "Register",
+    "userType": "Select User Type (Farmer/Consumer)",
+    "submit": "Register"
+  },
+  "error": {
+    "generic": "An error occurred. Please try again."
+  }
+}
